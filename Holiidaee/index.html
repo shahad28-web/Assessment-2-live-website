@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holidae — Find Your Escape</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><span class="nav__logo-mark">H</span>olidae</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="packages.html" class="nav__link">Packages</a></li>
+        <li><a href="destinations.html" class="nav__link">Destinations</a></li>
+        <li><a href="packages.html" class="nav__link nav__link--cta">Book Now</a></li>
+      </ul>
+      <button class="nav__burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <ul class="nav__mobile-links">
+        <li><a href="index.html" class="nav__mobile-link">Home</a></li>
+        <li><a href="packages.html" class="nav__mobile-link">Packages</a></li>
+        <li><a href="destinations.html" class="nav__mobile-link">Destinations</a></li>
+        <li><a href="packages.html" class="nav__mobile-link nav__mobile-link--cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-text">Holidays for real people</p>
+      <h1 class="hero__title reveal-text delay-1">Go somewhere<br /><em>worth talking about.</em></h1>
+      <div class="hero__actions reveal-text delay-2">
+        <a href="packages.html" class="btn btn--primary">See Packages</a>
+        <a href="destinations.html" class="btn btn--ghost">Destinations</a>
+      </div>
+      <div class="hero__trust reveal-text delay-3">
+        <div class="trust-item"><span class="trust-item__number">12K+</span><span class="trust-item__label">Happy Travellers</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-item__number">80+</span><span class="trust-item__label">Destinations</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-item__number">4.9★</span><span class="trust-item__label">Avg Rating</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator"><span>Scroll</span><div class="hero__scroll-line"></div></div>
+  </section>
+
+
+  <!-- ===== QUICK SEARCH ===== -->
+  <section class="search-bar">
+    <div class="container">
+      <form class="search-form" id="searchForm" novalidate>
+        <div class="search-form__group">
+          <label class="search-form__label" for="destination">Where to?</label>
+          <input class="search-form__input" type="text" id="destination" placeholder="e.g. Maldives" />
+        </div>
+        <div class="search-form__group">
+          <label class="search-form__label" for="checkin">Check-in</label>
+          <input class="search-form__input" type="date" id="checkin" />
+        </div>
+        <div class="search-form__group">
+          <label class="search-form__label" for="checkout">Check-out</label>
+          <input class="search-form__input" type="date" id="checkout" />
+        </div>
+        <div class="search-form__group">
+          <label class="search-form__label" for="guests">Guests</label>
+          <select class="search-form__input" id="guests">
+            <option>1 Guest</option><option>2 Guests</option>
+            <option>3 Guests</option><option>4+ Guests</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary search-form__btn">Search</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ===== WHY HOLIDAE ===== -->
+  <section class="why section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Why Holidae</p>
+        <h2 class="section-title">We keep it <em>simple</em></h2>
+      </div>
+      <div class="why__grid">
+        <article class="why__card scroll-reveal">
+          <div class="why__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4L8 10v14c0 10 7 19 16 22 9-3 16-12 16-22V10L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M17 24l5 5 9-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="why__title">Price Match</h3>
+          <p class="why__text">Found it cheaper? We'll beat it — no questions.</p>
+        </article>
+        <article class="why__card scroll-reveal">
+          <div class="why__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 10C16.27 10 10 16.27 10 24v6a4 4 0 004 4h2V24h-2v-.05A10 10 0 0124 14a10 10 0 0110 9.95V24h-2v10h2a4 4 0 004-4v-6c0-7.73-6.27-14-14-14z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg></div>
+          <h3 class="why__title">24/7 Support</h3>
+          <p class="why__text">A real person picks up. Not a chatbot, not a queue.</p>
+        </article>
+        <article class="why__card scroll-reveal">
+          <div class="why__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6l4.5 9.5 10.5 1.5-7.5 7.5 1.5 10.5L24 30l-9 4.5 1.5-10.5L9 16.5 19.5 15 24 6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg></div>
+          <h3 class="why__title">Vetted Hotels</h3>
+          <p class="why__text">We've stayed in every place we sell. No nasty surprises.</p>
+        </article>
+        <article class="why__card scroll-reveal">
+          <div class="why__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M14 18H34M34 18l-5-5M34 18l-5 5M34 30H14M14 30l5-5M14 30l5 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="why__title">Free Cancellation</h3>
+          <p class="why__text">Cancel up to 14 days before. Life happens.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FEATURED PACKAGES ===== -->
+  <section class="packages section section--tinted">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Top Picks</p>
+        <h2 class="section-title">Most-booked <em>right now</em></h2>
+      </div>
+      <div class="packages__grid">
+
+        <article class="pkg-card pkg-card--featured scroll-reveal">
+          <div class="pkg-card__media">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=900&auto=format&fit=crop&q=80" alt="Overwater bungalows in the Maldives at sunset" class="pkg-card__img" loading="lazy" />
+            <span class="pkg-card__badge">Most Popular</span>
+            <div class="pkg-card__overlay"></div>
+          </div>
+          <div class="pkg-card__body">
+            <div class="pkg-card__meta"><span class="pkg-card__location">🌊 Maldives</span><span class="pkg-card__duration">7 Nights</span></div>
+            <h3 class="pkg-card__title">Maldives Luxury Escape</h3>
+            <p class="pkg-card__desc">Overwater villa. All-inclusive. You already know.</p>
+            <div class="pkg-card__footer">
+              <div class="pkg-card__price"><span class="pkg-card__price-from">from</span><span class="pkg-card__price-amount">£2,499</span><span class="pkg-card__price-pp">pp</span></div>
+              <a href="package.html" class="btn btn--primary btn--sm">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card scroll-reveal">
+          <div class="pkg-card__media">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=900&auto=format&fit=crop&q=80" alt="Santorini blue domes and white buildings in Greece" class="pkg-card__img" loading="lazy" />
+            <div class="pkg-card__overlay"></div>
+          </div>
+          <div class="pkg-card__body">
+            <div class="pkg-card__meta"><span class="pkg-card__location">🇬🇷 Greece</span><span class="pkg-card__duration">5 Nights</span></div>
+            <h3 class="pkg-card__title">Santorini Retreat</h3>
+            <p class="pkg-card__desc">Views, wine, sunsets. A cliché for a reason.</p>
+            <div class="pkg-card__footer">
+              <div class="pkg-card__price"><span class="pkg-card__price-from">from</span><span class="pkg-card__price-amount">£1,299</span><span class="pkg-card__price-pp">pp</span></div>
+              <a href="packages.html" class="btn btn--outline btn--sm">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card scroll-reveal">
+          <div class="pkg-card__media">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900&auto=format&fit=crop&q=80" alt="Bali rice terraces with lush green landscape" class="pkg-card__img" loading="lazy" />
+            <span class="pkg-card__badge pkg-card__badge--teal">New</span>
+            <div class="pkg-card__overlay"></div>
+          </div>
+          <div class="pkg-card__body">
+            <div class="pkg-card__meta"><span class="pkg-card__location">🇮🇩 Bali</span><span class="pkg-card__duration">10 Nights</span></div>
+            <h3 class="pkg-card__title">Bali Spirit Journey</h3>
+            <p class="pkg-card__desc">Temples, rice fields, spa days. The reset you need.</p>
+            <div class="pkg-card__footer">
+              <div class="pkg-card__price"><span class="pkg-card__price-from">from</span><span class="pkg-card__price-amount">£1,799</span><span class="pkg-card__price-pp">pp</span></div>
+              <a href="packages.html" class="btn btn--outline btn--sm">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card scroll-reveal">
+          <div class="pkg-card__media">
+            <img src="https://images.unsplash.com/photo-1533587855362-c75e9d5fba97?w=900&auto=format&fit=crop&q=80" alt="Colourful buildings in Positano on the Amalfi Coast" class="pkg-card__img" loading="lazy" />
+            <div class="pkg-card__overlay"></div>
+          </div>
+          <div class="pkg-card__body">
+            <div class="pkg-card__meta"><span class="pkg-card__location">🇮🇹 Italy</span><span class="pkg-card__duration">6 Nights</span></div>
+            <h3 class="pkg-card__title">Amalfi Coast</h3>
+            <p class="pkg-card__desc">Clifftop villages. Pasta. Limoncello. Repeat.</p>
+            <div class="pkg-card__footer">
+              <div class="pkg-card__price"><span class="pkg-card__price-from">from</span><span class="pkg-card__price-amount">£1,599</span><span class="pkg-card__price-pp">pp</span></div>
+              <a href="packages.html" class="btn btn--outline btn--sm">View</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="packages__cta"><a href="packages.html" class="btn btn--primary">All Packages</a></div>
+    </div>
+  </section>
+
+
+  <!-- ===== PHOTO MOSAIC ===== -->
+  <section class="mosaic section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Explore</p>
+        <h2 class="section-title">Pick a <em>corner of the world</em></h2>
+      </div>
+      <div class="mosaic__grid">
+        <div class="mosaic__item mosaic__item--tall scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&auto=format&fit=crop&q=80" alt="Aerial view of Maldives overwater villas and turquoise lagoon" loading="lazy" />
+          <span class="mosaic__label">Maldives</span>
+        </div>
+        <div class="mosaic__item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?w=600&auto=format&fit=crop&q=80" alt="Longtail boat on a turquoise Thai beach" loading="lazy" />
+          <span class="mosaic__label">Thailand</span>
+        </div>
+        <div class="mosaic__item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&auto=format&fit=crop&q=80" alt="Traditional Japanese temple surrounded by autumn trees" loading="lazy" />
+          <span class="mosaic__label">Japan</span>
+        </div>
+        <div class="mosaic__item mosaic__item--wide scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1000&auto=format&fit=crop&q=80" alt="Dramatic Norwegian fjord with mountain reflections" loading="lazy" />
+          <span class="mosaic__label">Norway</span>
+        </div>
+        <div class="mosaic__item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=600&auto=format&fit=crop&q=80" alt="Vast Saharan sand dunes at sunset in Morocco" loading="lazy" />
+          <span class="mosaic__label">Morocco</span>
+        </div>
+        <div class="mosaic__item scroll-reveal">
+          <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=600&auto=format&fit=crop&q=80" alt="Dubai skyline at dusk with city lights" loading="lazy" />
+          <span class="mosaic__label">Dubai</span>
+        </div>
+      </div>
+      <div class="packages__cta"><a href="destinations.html" class="btn btn--primary">All Destinations</a></div>
+    </div>
+  </section>
+
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section section--dark">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-eyebrow section-eyebrow--light">Real Reviews</p>
+        <h2 class="section-title section-title--light">Don't take <em>our word for it</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <blockquote class="testimonial scroll-reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"Holidae sorted the entire Maldives trip. We just showed up. Best holiday we've ever had."</p>
+          <footer class="testimonial__author">
+            <img src="https://i.pravatar.cc/60?img=47" alt="Sarah M." class="testimonial__avatar" />
+            <div><strong>Sarah M.</strong><span>Maldives, July 2024</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial scroll-reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"We've tried four travel companies. Holidae is the only one we're ever using again. Bali was incredible."</p>
+          <footer class="testimonial__author">
+            <img src="https://i.pravatar.cc/60?img=12" alt="James and Priya K." class="testimonial__avatar" />
+            <div><strong>James & Priya K.</strong><span>Bali, March 2025</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial scroll-reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"Our first flight got cancelled. Within 2 hours Holidae had rebooked everything. They genuinely saved our holiday."</p>
+          <footer class="testimonial__author">
+            <img src="https://i.pravatar.cc/60?img=32" alt="Charlotte R." class="testimonial__avatar" />
+            <div><strong>Charlotte R.</strong><span>Santorini, June 2024</span></div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== VIDEO ===== -->
+  <section class="video-section section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">See For Yourself</p>
+        <h2 class="section-title">What it actually <em>looks like</em></h2>
+      </div>
+      <div class="video-grid">
+        <div class="video-wrapper scroll-reveal">
+          <iframe src="https://www.youtube.com/embed/7m1ym5MTjE8?rel=0&modestbranding=1" title="Maldives travel video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-wrapper scroll-reveal">
+          <iframe src="https://www.youtube.com/embed/DpDak-oMHrU?rel=0&modestbranding=1" title="Santorini travel video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter section section--tinted">
+    <div class="container">
+      <div class="newsletter__inner">
+        <div class="newsletter__content">
+          <p class="section-eyebrow">Deals First</p>
+          <h2 class="newsletter__title">Get deals before <em>everyone else</em></h2>
+          <p class="newsletter__text">40,000+ travellers already do. No spam, ever.</p>
+        </div>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <div class="newsletter__form-group">
+            <input type="email" id="emailInput" class="newsletter__input" placeholder="Your email" required />
+            <p class="newsletter__error" id="emailError">Please enter a valid email.</p>
+          </div>
+          <button type="submit" class="btn btn--primary">Get Deals</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo"><span class="nav__logo-mark">H</span>olidae</a>
+          <p class="footer__tagline">One less thing to stress about.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram" class="footer__social">IG</a>
+            <a href="#" aria-label="Facebook" class="footer__social">FB</a>
+            <a href="#" aria-label="Twitter" class="footer__social">TW</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Explore</h4>
+          <ul class="footer__list">
+            <li><a href="packages.html" class="footer__link">All Packages</a></li>
+            <li><a href="destinations.html" class="footer__link">Destinations</a></li>
+            <li><a href="package.html" class="footer__link">Maldives Escape</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Help</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">FAQs</a></li>
+            <li><a href="#" class="footer__link">Cancellations</a></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="destinations.html" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Holidae Ltd. All rights reserved. ATOL protected.</p>
+        <p>Prices per person, two sharing. Subject to availability.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
